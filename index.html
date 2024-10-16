@@ -2,97 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人工作台</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        section {
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            padding: 20px;
-        }
-        h2 {
-            color: #333;
-        }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>个人工作台</h1>
-    </header>
-    <main>
-        <section id="daily-tasks">
-            <h2>每日任务</h2>
-            <ul>
-                <!-- 这里可以动态生成每日任务列表 -->
-            </ul>
-            <button id="add-task">添加任务</button>
-        </section>
-        <section id="goals">
-            <h2>目标与计划</h2>
-            <div id="long-term-goals">
-                <h3>长期目标</h3>
-                <ul>
-                    <!-- 这里可以列出长期目标 -->
-                </ul>
+    <div class="container">
+        <div class="left">
+            <h1>imswork.top</h1>
+            <p>简洁、高效的工作台</p>
+        </div>
+        <div class="center">
+            <div class="quote-box">
+                <p>“一个简单而高效的工作台，助你完成每一天的任务。”</p>
             </div>
-            <div id="short-term-plans">
-                <h3>短期计划</h3>
-                <ul>
-                    <!-- 这里可以列出短期计划 -->
-                </ul>
+            <div class="cards">
+                <div class="card">
+                    <a href="#todo">每日待做事项</a>
+                </div>
+                <div class="card">
+                    <a href="#plans">长期计划</a>
+                </div>
+                <div class="card">
+                    <a href="#notes">备忘录</a>
+                </div>
+                <div class="card">
+                    <a href="#decision">随机选择工具</a>
+                </div>
             </div>
-            <button id="add-goal">添加目标或计划</button>
-        </section>
-        <section id="tetris-game">
-            <h2>俄罗斯方块</h2>
-            <div id="game-container">
-                <!-- 这里可以放置游戏画面 -->
+        </div>
+        <div class="right">
+            <div class="time-box">
+                <p id="time"></p>
             </div>
-            <button id="start-game">开始游戏</button>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 个人工作台</p>
-    </footer>
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- 引入外部 JavaScript 文件 -->
 </body>
 </html>
